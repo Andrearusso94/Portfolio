@@ -1,0 +1,55 @@
+/* ============================================================
+   DESIGN TOKENS — unica fonte di verità per palette, font,
+   spaziature e motion. Le sezioni consumano SOLO var(--*):
+   nessun valore hardcoded nei componenti.
+   ============================================================ */
+:root {
+  /* Palette — gotham/noir blu */
+  --color-bg: #050507;
+  --color-bg-raised: #0b0d13;
+  --color-bg-section: #07080b;
+  --color-band-dark: #060a12;
+  --color-band-a: #0d1420;
+  --color-band-b: #101827;
+  --color-band-c: #0c1522;
+  --color-band-d: #0e1a2c;
+
+  --color-accent: #3b82f6;
+  --color-accent-strong: #2563eb;
+  --color-accent-glow: rgba(59, 130, 246, 0.55);
+
+  --color-text: #e8eaf0;
+  --color-text-bright: #f4f6fb;
+  --color-text-soft: #a6acbd;
+  --color-text-muted: #8b93a7;
+  --color-text-faint: #6b7284;
+  --color-text-dim: #5f6879;
+  --color-text-nav: #c7cbd6;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-soft: rgba(255, 255, 255, 0.06);
+  --color-border-accent: rgba(59, 130, 246, 0.12);
+  --color-border-accent-mid: rgba(59, 130, 246, 0.25);
+  --color-border-accent-hover: rgba(59, 130, 246, 0.5);
+
+  /* Tipografia */
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Menlo', monospace;
+
+  /* Layout */
+  --page-pad-x: 48px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+
+  /* Motion (scroll reveal) */
+  --reveal-duration: 0.8s;
+  --reveal-offset: 24px;
+  --reveal-ease: ease;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --page-pad-x: 24px;
+  }
+}
