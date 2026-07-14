@@ -1,4 +1,5 @@
 import { useReveal } from '../../hooks/useReveal';
+import { ContactForm } from './ContactForm';
 import styles from './Contact.module.css';
 
 const CONTACT_EMAIL = 'andrea.r.4845@gmail.com';
@@ -20,6 +21,7 @@ export function Contact() {
         <a href={`mailto:${CONTACT_EMAIL}`} className={styles.emailCta}>
           {CONTACT_EMAIL} <span aria-hidden="true">↗</span>
         </a>
+        <ContactForm />
         <div className={styles.socials}>
           <a
             href="https://github.com/Andrearusso94"
