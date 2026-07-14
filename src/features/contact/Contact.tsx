@@ -21,14 +21,21 @@ export function Contact() {
           {CONTACT_EMAIL} <span aria-hidden="true">↗</span>
         </a>
         <div className={styles.socials}>
-          <a href="#" className={styles.socialLink}>
+          <a
+            href="https://github.com/Andrearusso94"
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-          <a href="#" className={styles.socialLink}>
+          <a
+            href="https://www.linkedin.com/in/andrea-russo-8570a122b/"
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
-          </a>
-          <a href="#" className={styles.socialLink}>
-            Twitter / X
           </a>
         </div>
       </div>
