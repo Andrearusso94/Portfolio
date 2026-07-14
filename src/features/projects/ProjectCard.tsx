@@ -18,6 +18,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const { ref, visible } = useReveal<HTMLAnchorElement>();
   const patternId = `stripe-card-${project.key}`;
+  const isExternal = project.link !== '#';
 
   return (
     <a
@@ -26,6 +27,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       className={`${styles.card} ${visible ? styles.isVisible : ''}`}
       style={{ '--card-delay': `${index * 0.08}s` } as CSSProperties}
       data-testid={`project-card-${project.key}`}
+      {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
     >
       <div className={`${styles.band} ${BAND_CLASS[project.bandToken]}`}>
         <svg className={styles.bandPattern} aria-hidden="true">
