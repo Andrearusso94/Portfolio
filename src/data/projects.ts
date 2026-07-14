@@ -1,6 +1,6 @@
 /**
- * Dati segnaposto: nomi, tag e descrizioni sono quelli della bozza.
- * Verranno perfezionati in issue dedicate — non modificarli d'iniziativa.
+ * Solo i link di `jarvis` e `atlante` restano segnaposto (`#`):
+ * verranno aggiornati con issue dedicate — non modificarli d'iniziativa.
  */
 export interface Project {
   key: string;
@@ -24,15 +24,6 @@ export const projects: Project[] = [
     link: '#',
   },
   {
-    key: 'ineos',
-    name: 'Studio Ineos',
-    tag: 'Healthcare · AI Search',
-    desc: 'Sito per poliambulatorio con ricerca AI integrata: i pazienti trovano specialisti e servizi in linguaggio naturale.',
-    imgLabel: 'studio-ineos',
-    bandToken: 'b',
-    link: '#',
-  },
-  {
     key: 'atlante',
     name: 'Atlante Sincronico 3D',
     tag: 'Education · WebGL',
@@ -42,13 +33,22 @@ export const projects: Project[] = [
     link: '#',
   },
   {
-    key: 'publish',
-    name: 'Sync Publish (in sviluppo)',
-    tag: 'SaaS · Publishing',
-    desc: "Costruzione e pubblicazione simultanea del sito: un flusso che oggi nessuna AI offre davvero — dal build al deploy in un unico passo.",
-    imgLabel: 'progetto in stealth',
+    key: 'avelights',
+    name: 'Ave Lights',
+    tag: 'Business · Web Design',
+    desc: "Sito per uno studio di tatuaggi e piercing a Roma: identità visiva, prenotazioni e blog per portare online un'attività reale.",
+    imgLabel: 'avelights.com',
+    bandToken: 'b',
+    link: 'https://www.avelights.com/',
+  },
+  {
+    key: 'boschetti',
+    name: 'Simone Boschetti',
+    tag: 'Portfolio · Web Design',
+    desc: 'Sito personale per un tatuatore specializzato in calligrafia e fineline: galleria lavori, prenotazioni e presenza online su misura.',
+    imgLabel: 'simoneboschetti.com',
     bandToken: 'd',
-    link: '#',
+    link: 'https://www.simoneboschetti.com/',
   },
 ];
 
