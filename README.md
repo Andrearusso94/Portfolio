@@ -12,3 +12,5 @@ npm run typecheck  # tsc --noEmit
 npm test           # smoke test baseline
 npm run build      # typecheck + build produzione
 ```
+
+<!-- test collegamento: verifica connessione Codespace/GitHub (2026-07-14) -->
