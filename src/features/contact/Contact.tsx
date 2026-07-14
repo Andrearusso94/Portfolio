@@ -1,8 +1,7 @@
 import { useReveal } from '../../hooks/useReveal';
 import styles from './Contact.module.css';
 
-/** Email segnaposto: verrà sostituita con quella reale in una issue dedicata. */
-const CONTACT_EMAIL = 'hello@nyc.dev';
+const CONTACT_EMAIL = 'andrea.r.4845@gmail.com';
 
 export function Contact() {
   const { ref, visible } = useReveal<HTMLDivElement>();
